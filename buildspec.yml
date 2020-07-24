@@ -1,12 +1,30 @@
-version: 0.2
+version: 0.1
 
+environment_variables:
+  plaintext:
+    key: "value"
+    key: "value"
+            
 phases:
   install:
     commands:
-      - npm install
+      - echo "In here"
+      - false
+      - true
+  pre_build:
+    commands:
+      - command
+      - command
   build:
     commands:
-      - npm test
+      - command
+      - command
+  post_build:
+    commands:
+      - command
+      - command
 artifacts:
   files:
-    - '**/*'
+    - location
+    - location
+  discard-paths: yes
